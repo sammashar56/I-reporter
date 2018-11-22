@@ -1,3 +1,3 @@
 # I-reporter
 
-https://sammashar56.github.io/I-reporter/
+## This is a platform that allows users report corruption and make interventions.
