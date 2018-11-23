@@ -139,6 +139,15 @@ body{
     color: #fff;
     cursor: pointer;
 }
+.blue-btn{
+  background: #04aefd;
+  color: #fff;
+  cursor: pointer;
+  width: 150px;
+  height: 35px;
+  border-radius: 5px;
+
+}
 
 /* Button styling */
 .basic-btn
