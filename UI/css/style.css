@@ -118,6 +118,24 @@ body{
     font-size: 15px;
     color: #000;
 }
+.green-btn 
+{
+    background: #fff;
+    outline: none;
+    width: 150px;
+    height: 35px;
+    border: 1px solid#00d700;
+    color: #00d700;
+    border-radius: 5px;
+    font-family: quicksand;
+}
+
+.green-btn:hover 
+{
+    background: #00d700;
+    color: #fff;
+    cursor: pointer;
+}
 
 /* Button styling */
 .basic-btn
