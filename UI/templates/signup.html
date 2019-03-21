@@ -1,62 +1,65 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta http-equiv="X-UA-Compatible" content="ie=edge">
-<script src="../function.js" ></script> 
-<title>I-reporter</title>
-<link rel="stylesheet" href="../css/style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <script src="../function.js"></script>
+  <title>I-reporter</title>
+  <link rel="stylesheet" href="../css/style.css">
 </head>
+
 <body>
-<nav class="navbar">
-  <span class="open-slide">
-    <a href="#" onclick="openSlideMenu()">
-      <svg width="30" height="30">
-          <path d="M0,5 30,5" stroke="#fff" stroke-width="5"/>
-          <path d="M0,14 30,14" stroke="#fff" stroke-width="5"/>
-          <path d="M0,23 30,23" stroke="#fff" stroke-width="5"/>
-      </svg>
-    </a>
-  </span>
+  <nav class="navbar">
+    <span class="open-slide">
+      <a href="#" onclick="openSlideMenu()">
+        <svg width="30" height="30">
+          <path d="M0,5 30,5" stroke="#fff" stroke-width="5" />
+          <path d="M0,14 30,14" stroke="#fff" stroke-width="5" />
+          <path d="M0,23 30,23" stroke="#fff" stroke-width="5" />
+        </svg>
+      </a>
+    </span>
 
-  <ul class="navbar-nav">
-    <li><a href="index.html">Home</a></li>
-    <li><a href="login.html">Log in</a></li>
-    <li><a href="signup.html" >sign Up</a></li>
-    <li><a href="add-flag.html">create flag</a></li>
-  </ul>
-</nav>
+    <ul class="navbar-nav">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="login.html">Log in</a></li>
+      <li><a href="signup.html">sign Up</a></li>
+      <li><a href="add-flag.html">create flag</a></li>
+    </ul>
+  </nav>
 
-<div id="side-menu" class="side-nav">
-  <a href="#" class="btn-close" onclick="closeSlideMenu()">&times;</a>
-  <a href="#"></a>
-  <a href="#"></a>
-  <a href="#"></a>
-  <a href="#"></a> 
-  <a href="#"></a>
-</div>
+  <div id="side-menu" class="side-nav">
+    <a href="#" class="btn-close" onclick="closeSlideMenu()">&times;</a>
+    <a href="#"></a>
+    <a href="#"></a>
+    <a href="#"></a>
+    <a href="#"></a>
+    <a href="#"></a>
+  </div>
 
-<div class="form-holder">
-  <!-- <form id="regform"> -->
+  <div class="form-holder">
+    <!-- <form id="regform"> -->
     <form action="#" class="form" id="regform">
-            <br><br>
-            <h1>Sign up</h1>
-            <input type="firstname" class="form-input" id="firstname" placeholder="firstname" required autofocus>
-            <br><br>
-            <input type="lastname" class="form-input" id="lastname" placeholder="lastname" required autofocus>
-            <br><br>
-            <input type="email" class="form-input" id="email" placeholder="Email" required autofocus>
-            <br><br>
-            <input type="type" class="form-input" id="phoneNumber" placeholder="PhoneNumber" required autofocus><br><br>
-            <input type="password" class="form-input" id="password" placeholder="Password" required autofocus><br><br>
-            <input type="password" class="form-input" id="confirmPassword" placeholder=" confirm Password" required autofocus><br><br>
-            <div class="left-pos">
-            <button type="submit" class="basic-btn" id="signupBtn">
-                sign in
-            </button><br><br>
-            <a href="login.html">already have an account?</a>
-	</div>
-  <script src="../js/signup.js" ></script> 
+      <br><br>
+      <h1>Sign up</h1>
+      <input type="firstname" class="form-input" id="firstname" placeholder="firstname" required autofocus>
+      <br><br>
+      <input type="lastname" class="form-input" id="lastname" placeholder="lastname" required autofocus>
+      <br><br>
+      <input type="email" class="form-input" id="email" placeholder="Email" required autofocus>
+      <br><br>
+      <input type="type" class="form-input" id="phoneNumber" placeholder="PhoneNumber" required autofocus><br><br>
+      <input type="password" class="form-input" id="password" placeholder="Password" required autofocus><br><br>
+      <input type="password" class="form-input" id="confirmPassword" placeholder=" confirm Password" required
+        autofocus><br><br>
+      <button type="submit" class="basic-btn" id="signupBtn" onclick="postData()">
+        sign in
+      </button><br><br>
+      <a href="login.html">already have an account?</a>
+    </form>
+    <script src="../js/signup.js"></script>
 </body>
+
 </html>

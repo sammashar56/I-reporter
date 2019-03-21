@@ -33,7 +33,7 @@
 //           });
 //       });
 //     }
-    
+
 //     signupBtn.addEventListener('click', (e) => {
 //       e.preventDefault();
 //       const data = {
@@ -52,7 +52,7 @@
 //         } else {
 //           window.localStorage.setItem('errors', JSON.stringify(result.errors));
 //         }
-    
+
 //         const err = document.getElementById('error');
 //         if (result.status === 201) {
 //           err.textContent = window.localStorage.getItem('message');
@@ -79,7 +79,7 @@
 //               case 'phonennumber':
 //                 err.textContent = 'Phone Number' + ' : ' + 'Invalid input';
 //                 break;
-    
+
 //               default:
 //                 err.textContent = 'Invalid Input, please check that you have filled the fields correctly';
 //                 break;
@@ -91,41 +91,42 @@
 //         const login_url = 'login.html';
 //         const responseJson = result;
 //         const status_code = responseJson.status;
-        // if (status_code === 201) {
-        //   window.location = login_url;
+// if (status_code === 201) {
+//   window.location = login_url;
 //         }
 //       });
 //     });
 
-const signup = 'http://127.0.0.1:5000/api/v2/auth/signup' // basic url that is being fetched
-    document.getElementById('regform').addEventListener('signupBtn', postData); // an event litsener for the signupBtn 
-    function postData(){
-        // getting the basic inputs from the fields
-        let firstname = document.getElementById('firstname').value
-        let lastname = document.getElementById('lastname').value
-        let email = document.getElementById('email').value;
-        let password = document.getElementById('password').value;
-        let confirmPassword = document.getElementById('confirmPassword').value;
-        
-         fetch(signup, {
-            method: 'POST',
-            mode:'cors',
-            headers: new Headers({
-                'Content-Type': 'application/json'
-              }),
-            body:JSON.stringify({
-            firstname:firstname,
-            lastname:lastname,
-            email:email,
-            password:password,
-            confirmPassword:confirmPassword})
-        })
-        .then((res) => res.json())
-        .then((res_data) => { console.log(data)
-        if (res_data.status_code === 201) {
-			window.href ="login.html"
-        }
-	})
-        .catch((err)=>console.log(err))
+const signup = "http://127.0.0.1:5000/api/v2/auth/signup"; // basic url that is being fetched
+document.getElementById("regform").addEventListener("signupBtn", postData); // an event litsener for the signupBtn
+function postData() {
+  // getting the basic inputs from the fields
+  let firstname = document.getElementById("firstname").value;
+  let lastname = document.getElementById("lastname").value;
+  let email = document.getElementById("email").value;
+  let password = document.getElementById("password").value;
+  let confirmPassword = document.getElementById("confirmPassword").value;
+
+  fetch(signup, {
+    method: "POST",
+    mode: "cors",
+    headers: new Headers({
+      "Content-Type": "application/json"
+    }),
+    body: JSON.stringify({
+      firstname: firstname,
+      lastname: lastname,
+      email: email,
+      password: password,
+      confirmPassword: confirmPassword
+    })
+  })
+    .then(res => res.json())
+    .then(res_data => {
+      console.log(data);
+      if (res_data.status_code === 201) {
+        window.href = "login.html";
+      }
+    })
+    .catch(err => console.log(err));
 }
-console.log(postData)
