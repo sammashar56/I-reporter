@@ -23,7 +23,6 @@
   <ul class="navbar-nav">
     <li><a href="index.html">Home</a></li>
     <li><a href="login.html">Log in</a></li>
-    <li><a href="signup.html" >sign Up</a></li>
     <li><a href="add-flag.html">create flag</a></li>
     <li><a href="admin.html">Admin dashboard</a></li>
     <li><a href="#">logout</a></li>
@@ -43,15 +42,20 @@
     <form action="#" class="form">
     <br><br>
     <h1>Login</h1>
-    <input type="email" class="form-input" placeholder="Email" required autofocus>
+    <form id="logform">
+    <fieldset>
+    <input type="email" class="form-input" id="email" placeholder="Email" required autofocus>
     <br>
-    <input type="password" class="form-input" placeholder="Password" required autofocus><br><br>
+    <input type="password" class="form-input" id="password" placeholder="Password" required autofocus><br><br>
     <div class="left-pos">
-        <button type="submit" class="basic-btn">
+        <button type="submit" class="basic-btn" id="btnlogin">
             Log In
         </button><br><br>
-        <a href="signup.html">already have an account</a>
-	</div>
-
+        <a href="signup.html">sign up</a>
+  </div>
+</fieldset>
+</form>
+ 
 </body>
+<script src="../js/login.js" ></script> 
 </html>

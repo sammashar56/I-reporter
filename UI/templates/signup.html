@@ -25,8 +25,6 @@
     <li><a href="login.html">Log in</a></li>
     <li><a href="signup.html" >sign Up</a></li>
     <li><a href="add-flag.html">create flag</a></li>
-    <li><a href="admin.html">Admin dashboard</a></li>
-    <li><a href="#">logout</a></li>
   </ul>
 </nav>
 
@@ -40,21 +38,25 @@
 </div>
 
 <div class="form-holder">
-    <form action="#" class="form">
+  <!-- <form id="regform"> -->
+    <form action="#" class="form" id="regform">
             <br><br>
             <h1>Sign up</h1>
-            <input type="email" class="form-input" placeholder="Email" required autofocus>
-            <br>
-            <input type="type" class="form-input" placeholder="Phone number" required autofocus><br><br>
-            <input type="password" class="form-input" placeholder="Password" required autofocus><br><br>
-            <input type="password" class="form-input" placeholder=" confirm Password" required autofocus><br><br>
+            <input type="firstname" class="form-input" id="firstname" placeholder="firstname" required autofocus>
+            <br><br>
+            <input type="lastname" class="form-input" id="lastname" placeholder="lastname" required autofocus>
+            <br><br>
+            <input type="email" class="form-input" id="email" placeholder="Email" required autofocus>
+            <br><br>
+            <input type="type" class="form-input" id="phoneNumber" placeholder="PhoneNumber" required autofocus><br><br>
+            <input type="password" class="form-input" id="password" placeholder="Password" required autofocus><br><br>
+            <input type="password" class="form-input" id="confirmPassword" placeholder=" confirm Password" required autofocus><br><br>
             <div class="left-pos">
-            <button type="submit" class="basic-btn">
+            <button type="submit" class="basic-btn" id="signupBtn">
                 sign up
             </button><br><br>
-            <a href="login.html">log in</a>
-
+            <a href="login.html">already have an account?</a>
 	</div>
-
+  <script src="../js/signup.js" ></script> 
 </body>
 </html>
